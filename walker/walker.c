@@ -56,8 +56,6 @@ void read_dir_rec(char* buf, int indent, int pos)
 		if (strcmp(tmp->d_name, ".") == 0 ||
 			 strcmp(tmp->d_name, "..")==0)
 			continue;
-		if (strcmp(tmp->d_name, "license_uri") == 0)
-			res = 0;
 
 		pos = strlen(buf);
 		strcat(buf, "/");
